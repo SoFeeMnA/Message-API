@@ -49,7 +49,7 @@ def handle_message(event):
         # สามารถเรียกใช้ฟังก์ชันดึงข้อมูลทองคำจาก Investing.com ที่คุณทำไว้ก่อนหน้ามาใส่ตรงนี้ได้
         reply_text = getAll()
     else:
-        # reply_text = f"คุณพูดว่า: '{user_message}'"
+        reply_text = f"คุณพูดว่า: '{user_message}'"
         
     # ส่งข้อความตอบกลับ
     line_bot_api.reply_message(
